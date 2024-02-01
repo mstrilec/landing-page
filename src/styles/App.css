@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url('../images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 168px;
+  margin-bottom: 15px;
+}
+
+.title {
+  margin-bottom: 24px;
+
+  color: var(--Black, #232323);
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -2.4px;
+}
+
+.fireFly {
+  background: var(--Black, linear-gradient(92deg, #C81363 64.06%, #FF8129 97.95%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -2.4px;
+}
+
+.text {
+  margin-bottom: 36px;
+
+  color: var(--Black, #232323);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+.discord-button {
+  width: 220px;
+  height: 60px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: var(--Gradient, linear-gradient(91deg, #AA1574 -12.44%, #E03B37 39.12%, #F6600F 74.99%, #FF6F00 94.04%));
+  box-shadow: 0px 4px 34.6px 0px rgba(0, 0, 0, 0.15);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.join-discord {
+  color: var(--White, #FFF);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.discord-logo {
+  margin-top: 5px;
+}
+
+.icons {
+  display: flex;
+  gap: 42px;
+
+  margin-top: 370px;
+}
+
+.content {
+  background: #ffffff;
+}
+
+.content-container {
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 61px;
+}
+
+.backgrounds {
+  display: flex;
+
+  gap: 116px;
+}
+
+.backgrounds-title {
+  color: var(--Black, #232323);
+  text-align: center;
+  font-family: Inter;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1.84px;
+}
+
+.backgrounds-text {
+  width: 445px;
+
+  color: var(--Black, #232323);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+.companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 145px;
+}
+
+.main-container {
+  background: url('../images//Ellipse.png');
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-project-highlights {
+  display: flex;
+  justify-content: space-around;
+  align-self: stretch;
+}
+
+.main-titles {
+  margin-top: 119px;
+}
+
+.upper-title {
+  color: #151515;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -1.2px;
+}
+
+.lower-title {
+  background: linear-gradient(92deg, #DD3A75 64.06%, #FF8129 97.95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 70px;
+  letter-spacing: -2.4px;
+}
+
+.project-highlights {
+  margin-top: 119px;
+}
+
+.project-highlights-text {
+  margin-bottom: 48px;
+
+  color: var(--Black, #232323);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+}
+
+.features {
+  margin-bottom: 48px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.feature {
+  display: flex;
+
+  gap: 24px;
+}
+
+.feature-text {
+  color: var(--Black, #232323);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.8px;
+}
+
+.rectangle {
+  width: 908px;
+  height: 400px;
+  border-radius: 36px;
+  background: linear-gradient(180deg, #371D57 0%, #10061D 100%);
+  box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.20);
+  margin-top: 215px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+
+.rectangle-text {
+  width: 640px;
+  height: 120px;
+
+  color: var(--White, #FFF);
+  text-align: center;
+  font-family: Inter;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+}
+
+.main-icons {
+  display: flex;
+  gap: 42px;
+
+  margin: auto;
+  margin-top: 62px;
+}
+
+.copyrightNotice {
+  margin-top: 42px;
+  margin-bottom: 59px;
+
+  color: #A7A7A7;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.28px;
+}
