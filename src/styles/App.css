@@ -6,13 +6,17 @@
   box-sizing: border-box;
 }
 
+html {
+  
+}
+
 .header {
   background-image: url('../images/background.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
-  height: 100vh;
+  padding-bottom: 30px;
 }
 
 .container {
@@ -67,7 +71,8 @@
 }
 
 .discord-button {
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   height: 60px;
   padding: 10px 20px;
   border-radius: 12px;
@@ -126,9 +131,18 @@
 }
 
 .backgrounds {
+  width: 50vw;
   display: flex;
+  justify-content: center;
+  align-items: center;
 
   gap: 116px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .backgrounds {
+    flex-wrap: wrap;
+  }
 }
 
 .backgrounds-title {
@@ -162,6 +176,12 @@
   gap: 145px;
 }
 
+@media only screen and (max-width: 450px) {
+  .companies {
+    flex-direction: column;
+  }
+}
+
 .main-container {
   background: url('../images//Ellipse.png');
   background-size: cover;
@@ -178,6 +198,7 @@
   display: flex;
   justify-content: space-around;
   align-self: stretch;
+  flex-wrap: wrap;
 }
 
 .main-titles {
@@ -248,8 +269,8 @@
 }
 
 .rectangle {
-  width: 908px;
-  height: 400px;
+  width: 50vw;
+  height: 20vw;
   border-radius: 36px;
   background: linear-gradient(180deg, #371D57 0%, #10061D 100%);
   box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.20);
@@ -260,10 +281,30 @@
   justify-content: center;
   align-items: center;
   gap: 36px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .rectangle {
+    width: 80%;
+    height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rectangle {
+    height: 50vw;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .rectangle {
+    height: 100vw;
+  }
 }
 
 .rectangle-text {
-  width: 640px;
+  width: 30vw;
   height: 120px;
 
   color: var(--White, #FFF);
@@ -274,6 +315,32 @@
   font-weight: 600;
   line-height: 40px;
   letter-spacing: -0.6px;
+}
+
+@media only screen and (max-width: 1465px) {
+  .rectangle-text {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .rectangle-text {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1105px) {
+  .rectangle-text {
+    width: 100%;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .rectangle-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .main-icons {
