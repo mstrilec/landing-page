@@ -110,41 +110,11 @@
   margin-top: 370px;
 }
 
-/* @media only screen and (max-height: 940px) {
+@media only screen and (max-width: 491px) {
   .icons {
-    margin-top: 280px;
+    margin-top: 275px;
   }
 }
-
-@media only screen and (max-height: 900px) {
-  .icons {
-    margin-top: 250px;
-  }
-}
-
-@media only screen and (max-height: 850px) {
-  .icons {
-    margin-top: 200px;
-  }
-}
-
-@media only screen and (max-height: 670px) {
-  .icons {
-    margin-top: 10px;
-  }
-}
-
-@media only screen and (max-height: 430px) {
-  .icons {
-    margin-top: 280px;
-  }
-}
-
-@media only screen and (max-height: 400px) {
-  .icons {
-    margin-top: 200px;
-  }
-} */
 
 .content {
   background: #ffffff;
@@ -153,6 +123,7 @@
 .content-container {
   margin-top: 100px;
   margin-bottom: 100px;
+  padding: 0 20px;
 
   display: flex;
   justify-content: center;
@@ -190,6 +161,8 @@
 }
 
 .backgrounds-text {
+  width: 445px;
+
   color: var(--Black, #232323);
   font-family: Inter;
   font-size: 16px;
@@ -197,7 +170,14 @@
   font-weight: 500;
   line-height: 28px;
   letter-spacing: -0.32px;
-  text-align: center;
+  text-align: left;
+}
+
+@media only screen and (max-width: 939px) {
+  .backgrounds-text {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .companies {
@@ -212,8 +192,10 @@
 
 @media only screen and (max-width: 939px) {
   .companies {
-    gap: 100px;
-    padding: 0 50px;
+    gap: 45px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -233,6 +215,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 939px) {
+  .main-container {
+    padding: 0 20px;
+  }
 }
 
 .main-project-highlights {
@@ -311,7 +299,7 @@
 
 .rectangle {
   width: 50vw;
-  padding: 92px 134px;
+  padding: 40px 20px;
   border-radius: 36px;
   background: linear-gradient(180deg, #371D57 0%, #10061D 100%);
   box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.20);
@@ -325,28 +313,14 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 939px) {
   .rectangle {
-    padding: 40px 40px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .rectangle {
-    padding: 40px 20px;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  .rectangle {
-    padding: 40px 40px;
+    width: 100%;
+    margin-top: 100px;
   }
 }
 
 .rectangle-text {
-  width: 30vw;
-  height: 120px;
-
   color: var(--White, #FFF);
   text-align: center;
   font-family: Inter;
@@ -357,29 +331,9 @@
   letter-spacing: -0.6px;
 }
 
-@media only screen and (max-width: 1465px) {
-  .rectangle-text {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 1250px) {
-  .rectangle-text {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 1105px) {
-  .rectangle-text {
-    width: 100%;
-    font-size: 25px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 939px) {
   .rectangle-text {
     font-size: 20px;
-    margin-bottom: 20px;
   }
 }
 
